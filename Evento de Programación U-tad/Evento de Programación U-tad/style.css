@@ -1,0 +1,133 @@
+/* Estilo general */
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    margin: 0;
+    background-color: #efefef;
+}
+/* Cabecera */
+header {
+    background-color: #295f9c;
+    background-image: url('img/que-es-la-informatica.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: white; 
+    text-align: center; 
+    padding: 20px; 
+}
+#titulo {
+    margin: 0;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+}
+/* Sección principal */
+main {
+    margin: 0.15rem 2%;
+}
+h2 {
+    background-color: #295f9c;
+    font-size: 1.5rem;
+    color: white;
+    padding: 0.5rem;
+}
+section {
+    background-color: #fff;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 0.5px solid black;
+    padding: 0.5rem;
+}
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+form input, form select, button {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ddd;
+}
+button {
+    background-color: #295f9c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #1e4978;
+}
+/* Pie de página */
+footer {
+    background-color: #09294d;
+    color: white;
+    padding: 1rem 5%;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+    transition: 0.3s ease;
+}
+#registro {
+    font-weight: bold;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+    #titulo {
+        font-size: 2rem;
+    }
+
+    header {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+
+    table, th, td {
+        font-size: 0.8rem;
+        padding: 0.3rem;
+    }
+
+    iframe {
+        width: 100%;
+        height: 150px;
+    }
+}
+@media (max-width: 480px) {
+    #titulo {
+        font-size: 1.5rem;
+    }
+
+    header img {
+        width: 100px;
+    }
+
+    header {
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+
+    form input, form select, button {
+        font-size: 0.8rem;
+        padding: 0.3rem;
+    }
+
+    table, th, td {
+        font-size: 0.7rem;
+        padding: 0.2rem;
+    }
+}
